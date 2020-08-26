@@ -1,0 +1,34 @@
+<h1>String Pipe</h1>
+<h2>{{title | uppercase }}</h2>
+<h3>{{title | lowercase}}</h3>
+<h1>{{title | titlecase}}</h1>
+<h1>Date Pipe</h1>
+<h2>Today is {{today}}</h2>
+<h3>{{today | date :'short'}}</h3>
+<h3>{{today | date :'full'}}</h3>
+<h3>{{today | date :'y/M/d'}}</h3>
+<h4>{{currentDate}}</h4>
+<h1>JSON Pipe</h1>
+<h2>{{student | json}}</h2>
+<h1>Currency Pipe</h1>
+<h2>{{money | currency:'USD'}}</h2>
+<h2>{{money | currency:'INR'}}</h2>
+<h2>{{money | currency:'EUR'}}</h2>
+<h2>{{money | currency:'CAD'}}</h2>
+<h2>{{money | currency:'AUD'}}</h2>
+<h1>Percentage Pipe</h1>
+<h2>{{marks | percent}}</h2>
+
+<h1>Decimal Pipe</h1>
+<h2>{{age | number}}</h2>
+
+<h1>Slice Pipe</h1>
+<h2>{{weekDays}}</h2>
+<h2>{{weekDays | slice:2:5}}</h2>
+<h2>{{weekDays | slice:2}}</h2>
+<h2>{{name}}</h2>
+<h2>{{name | slice:3:8}}</h2>
+<h1>Customized Pipe</h1>
+<h2>{{25 | sqrt}}</h2>
+<h2>{{num | sqrt}}</h2>
+<router-outlet></router-outlet>
